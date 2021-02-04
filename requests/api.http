@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/url/shorten
+Content-Type: application/json
+
+{
+	"longUrl": "https://www.amazon.in/Samsung-inches-Wondertainment-Ultra-UA55TUE60AKBXL/dp/B08R5QVRPP/ref=sr_1_2_sspa?dchild=1&keywords=tv&qid=1612425973&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExT1NBVTFSNUVYVTBGJmVuY3J5cHRlZElkPUEwNTc0NzI1TFRWMlRTMk9MNjhVJmVuY3J5cHRlZEFkSWQ9QTEwMDM0NzIxOVpUOFExT1dJM0NJJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+}
