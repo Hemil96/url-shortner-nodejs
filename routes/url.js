@@ -11,7 +11,7 @@ const Url = require('../models/Url');
 // @desc      Create short URL
 router.post('/shorten', async (req, res) => {
   const { longUrl } = req.body;  
-  const baseUrl = config.get('baseUrl');
+  const baseUrl = config.get('baseURL');
 
 	// Check based URL
 	if (!validUrl.isUri(baseUrl)) {
@@ -46,7 +46,7 @@ router.post('/shorten', async (req, res) => {
 			 return res.status(500).send({error: "Internal Server Error", data: error.message})
 		}
 	} else {
-		res.status(401).send({'error': 'Invalid long url'})
+		return res.status(401).send({'error': 'Invalid long url'})
 	}
 });
 
